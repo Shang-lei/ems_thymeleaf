@@ -3,7 +3,9 @@ package com.atguigu.cache.mapper;
 import com.atguigu.cache.Employee;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 
+@Repository
 @Mapper
 public interface EmployeeMapper {
     //编写方法的声名

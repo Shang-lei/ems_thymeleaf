@@ -19,27 +19,39 @@
     </properties>
 
     <dependencies>
-
+        <!--引入缓存依赖jar包-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
+
+        <!--引入Web依赖jar包，相当于整合了SpringMVC-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--引入MyBatis依赖的jar包-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.1.3</version>
         </dependency>
 
+        <!--引入MySQL依赖的jar包-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+        <!--引入Redis的依赖jar包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--引入单元测试依赖jar包-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -51,6 +63,8 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!---->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -58,6 +72,7 @@
         </dependency>
     </dependencies>
 
+    <!--用于Maven项目打包-->
     <build>
         <plugins>
             <plugin>
